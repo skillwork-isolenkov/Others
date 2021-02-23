@@ -29,27 +29,27 @@ window.addEventListener('load', function () {
 
 
     function openHome() {
-        window.location.href = '/My Projects/School Project/main/index.html';
+        window.location.href = '../../main/index.html';
     }
 
     function openAbout() {
-        window.location.href = '/My Projects/School Project/menu/about-project/index.html';
+        window.location.href = '../about-project/index.html';
     }
 
     function openGallery() {
-        window.location.href = '/My Projects/School Project/menu/gallery/index.html';
+        window.location.href = '../gallery/index.html';
     }
 
     function openRegister() {
-        window.location.href = '/My Projects/School Project/menu/register/index.html';
+        window.location.href = '../register/index.html';
     }
 
     function openLogin() {
-        window.location.href = '/My Projects/School Project/menu/login/index.html';
+        window.location.href = '../login/index.html';
     }
 
     function openContact() {
-        window.location.href = '/My Projects/School Project/menu/contact/index.html';
+        window.location.href = '../contact/index.html';
     }
 
 
@@ -62,6 +62,6 @@ window.addEventListener('load', function () {
     }
 
     function loginBtnFunction() {
-        window.location.href = '/My Projects/School Project/menu/login/index.html';
+        window.location.href = '../login/index.html';
     }
 })

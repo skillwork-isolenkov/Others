@@ -19,27 +19,27 @@ window.addEventListener('load', function () {
     button.addEventListener('click', clickedBtn);
 
     function openHome() {
-        window.location.href = '/My Projects/Restaurant/index.html';
+        window.location.href = '/index.html';
     }
 
     function openMenu() {
-        window.location.href = '/My Projects/Restaurant/menu/menu/index.html';
+        window.location.href = '../menu/index.html';
     }
 
     function openAbout() {
-        window.location.href = '/My Projects/Restaurant/menu/about-us/index.html';
+        window.location.href = '../about-us/index.html';
     }
 
     function openCareers() {
-        window.location.href = '/My Projects/Restaurant/menu/careers/index.html';
+        window.location.href = '../careers/index.html';
     }
 
     function openContact() {
-        window.location.href = '/My Projects/Restaurant/menu/contact-us/index.html';
+        window.location.href = '../contact-us/index.html';
     }
 
     function openOrder() {
-        window.location.href = '/My Projects/Restaurant/menu/online-order/index.html';
+        window.location.href = '../online-order/index.html';
     }
 
     function clickedBtn() {
