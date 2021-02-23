@@ -22,6 +22,8 @@ window.addEventListener('load', function () {
 
     let signInBtn = document.querySelector('.sign-in');
 
+    let titleHead = document.querySelector('.title-head');
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     gallery.addEventListener('click', openGallery);
@@ -31,6 +33,8 @@ window.addEventListener('load', function () {
 
     button.addEventListener('click', registerBtnFunction);
     signInBtn.addEventListener('click', signInFunc);
+
+    titleHead.addEventListener('click', titleHeadClick);
 
     function openHome() {
         window.location.href = '../../main/index.html';
@@ -67,5 +71,9 @@ window.addEventListener('load', function () {
             container.style.display = 'none';
             signincontainer.style.display = 'none';
         }
+    }
+
+    function titleHeadClick() {
+        window.location.href = '../../main/index.html';
     }
 })

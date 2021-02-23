@@ -6,12 +6,16 @@ window.addEventListener('load', function () {
     let login = document.querySelector('.login-element');
     let contact = document.querySelector('.contact-element');
 
+    let titleHead = document.querySelector('.title-head');
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     gallery.addEventListener('click', openGallery);
     register.addEventListener('click', openRegister);
     login.addEventListener('click', openLogin);
     contact.addEventListener('click', openContact);
+
+    titleHead.addEventListener('click', titleHeadClick);
 
     function openHome() {
         window.location.href = '../../main/index.html';
@@ -35,5 +39,9 @@ window.addEventListener('load', function () {
 
     function openContact() {
         window.location.href = '../contact/index.html';
+    }
+
+    function titleHeadClick() {
+        window.location.href = '../../main/index.html';
     }
 })

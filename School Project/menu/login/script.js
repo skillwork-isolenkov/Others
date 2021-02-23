@@ -19,6 +19,8 @@ window.addEventListener('load', function () {
 
     let forgottenPassBtn = document.querySelector('.forgotten-pass');
 
+    let titleHead = document.querySelector('.title-head');
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     gallery.addEventListener('click', openGallery);
@@ -29,6 +31,8 @@ window.addEventListener('load', function () {
     loginBtn.addEventListener('click', loginBtnFunction);
     registerBtn.addEventListener('click', registerBtnFunction);
     forgottenPassBtn.addEventListener('click', forgottenPassword);
+
+    titleHead.addEventListener('click', titleHeadClick);
 
 
     function openHome() {
@@ -71,5 +75,9 @@ window.addEventListener('load', function () {
 
     function forgottenPassword() {
         window.location.href = '../forgotten-password/index.html';
+    }
+
+    function titleHeadClick() {
+        window.location.href = '../../main/index.html';
     }
 })

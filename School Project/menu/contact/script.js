@@ -16,6 +16,8 @@ window.addEventListener('load', function () {
     let container = document.querySelector('.container');
     let contactUs = document.querySelector('main h2');
 
+    let titleHead = document.querySelector('.title-head');
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     gallery.addEventListener('click', openGallery);
@@ -24,6 +26,8 @@ window.addEventListener('load', function () {
     contact.addEventListener('click', openContact);
 
     sendEmailBtn.addEventListener('click', sendEmailFunction);
+
+    titleHead.addEventListener('click', titleHeadClick);
 
     function openHome() {
         window.location.href = '../../main/index.html';
@@ -55,5 +59,9 @@ window.addEventListener('load', function () {
             contactSpan.innerHTML = 'We got your message. We will contact you shortly!'
             container.style.display = 'none';
         }
+    }
+
+    function titleHeadClick() {
+        window.location.href = '../../main/index.html';
     }
 })

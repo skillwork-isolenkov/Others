@@ -17,6 +17,8 @@ window.addEventListener('load', function () {
 
     let loginBtn = document.querySelector('.login-button');
 
+    let titleHead = document.querySelector('.title-head');
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     gallery.addEventListener('click', openGallery);
@@ -26,6 +28,8 @@ window.addEventListener('load', function () {
 
     resetPasswordBtn.addEventListener('click', resetPasswordBtnFunction);
     loginBtn.addEventListener('click', loginBtnFunction);
+
+    titleHead.addEventListener('click', titleHeadClick);
 
 
     function openHome() {
@@ -63,5 +67,9 @@ window.addEventListener('load', function () {
 
     function loginBtnFunction() {
         window.location.href = '../login/index.html';
+    }
+
+    function titleHeadClick() {
+        window.location.href = '../../main/index.html';
     }
 })
