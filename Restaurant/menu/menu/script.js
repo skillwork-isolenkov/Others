@@ -14,7 +14,7 @@ window.addEventListener('load', function () {
     order.addEventListener('click', openOrder);
 
     function openHome() {
-        window.location.href = '/index.html';
+        window.location.href = '../../index.html';
     }
 
     function openMenu() {

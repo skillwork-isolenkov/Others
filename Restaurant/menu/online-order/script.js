@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
     button.addEventListener('click', clickedBtn);
 
     function openHome() {
-        window.location.href = '/index.html';
+        window.location.href = '../../index.html';
     }
 
     function openMenu() {

@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
     submitBtn.addEventListener('click', submitButton);
 
     function openHome() {
-        window.location.href = '/index.html';
+        window.location.href = '../../index.html';
     }
 
     function openMenu() {

@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
     careersBtn.addEventListener('click', openCareers)
 
     function openHome() {
-        window.location.href = '/index.html';
+        window.location.href = '../../index.html';
     }
 
     function openMenu() {
