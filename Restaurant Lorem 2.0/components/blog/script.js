@@ -8,6 +8,8 @@ window.addEventListener('load', function () {
     let reservation = document.querySelector('.reservation-link');
     let contact = document.querySelector('.contact-link');
 
+    let blogBtn = document.querySelector('.btn');
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     menu.addEventListener('click', openMenu);
@@ -16,6 +18,9 @@ window.addEventListener('load', function () {
     blog.addEventListener('click', openBlog);
     reservation.addEventListener('click', openReservation);
     contact.addEventListener('click', openContact);
+
+    blogBtn.addEventListener('click', blogFunc);
+
 
     function openHome() {
         window.location.href = '../../main-page/index.html';
@@ -47,5 +52,9 @@ window.addEventListener('load', function () {
 
     function openContact() {
         window.location.href = '../contact-us/index.html';
+    }
+
+    function blogFunc() {
+        window.location.href = '../../main-page/index.html';
     }
 })

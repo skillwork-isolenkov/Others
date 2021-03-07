@@ -107,3 +107,10 @@ main button:hover{
     cursor: pointer;
     border: 1px solid white;
 }
+
+.message{
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+}

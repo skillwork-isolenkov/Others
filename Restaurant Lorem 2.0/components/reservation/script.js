@@ -8,6 +8,17 @@ window.addEventListener('load', function () {
     let reservation = document.querySelector('.reservation-link');
     let contact = document.querySelector('.contact-link');
 
+    let reservationBtn = document.querySelector('.button');
+
+    let name = document.querySelector('.input-name');
+    let email = document.querySelector('.input-email');
+    let number = document.querySelector('.input-number');
+    let persons = document.querySelector('#persons');
+    let date = document.querySelector('.input-date');
+    let time = document.querySelector('.input-time');
+    let message = document.querySelector('.message');
+
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     menu.addEventListener('click', openMenu);
@@ -16,6 +27,8 @@ window.addEventListener('load', function () {
     blog.addEventListener('click', openBlog);
     reservation.addEventListener('click', openReservation);
     contact.addEventListener('click', openContact);
+
+    reservationBtn.addEventListener('click', reservationFunc);
 
     function openHome() {
         window.location.href = '../../main-page/index.html';
@@ -47,5 +60,18 @@ window.addEventListener('load', function () {
 
     function openContact() {
         window.location.href = '../contact-us/index.html';
+    }
+
+    function reservationFunc(e) {
+        e.preventDefault();
+        if (name.value !== '' && email.value !== '' && number.value !== '' && persons.value !== '' && date.value !== '' && time.value !== '') {
+            message.textContent = 'Your table is booked!'
+        }
+        name.value = '';
+        email.value = '';
+        number.value = '';
+        persons.value = '';
+        date.value = '';
+        time.value = '';
     }
 })
