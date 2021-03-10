@@ -8,6 +8,12 @@ window.addEventListener('load', function () {
     let reservation = document.querySelector('.reservation-link');
     let contact = document.querySelector('.contact-link');
 
+
+    let starters = document.querySelector('#starters');
+    let mainDishes = document.querySelector('#main-dishes');
+    let deserts = document.querySelector('#deserts');
+    let drinks = document.querySelector('#drinks');
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     menu.addEventListener('click', openMenu);
@@ -16,6 +22,11 @@ window.addEventListener('load', function () {
     blog.addEventListener('click', openBlog);
     reservation.addEventListener('click', openReservation);
     contact.addEventListener('click', openContact);
+
+    starters.addEventListener('click', openStarters);
+    mainDishes.addEventListener('click', openDishes);
+    deserts.addEventListener('click', openDeserts);
+    drinks.addEventListener('click', openDrinks);
 
     function openHome() {
         window.location.href = '../../main-page/index.html';
@@ -47,5 +58,33 @@ window.addEventListener('load', function () {
 
     function openContact() {
         window.location.href = '../contact-us/index.html';
+    }
+
+
+    function openStarters() {
+        document.querySelector('.slider-starters').style.display = "flex";
+        document.querySelector('.slider-main').style.display = "none";
+        document.querySelector('.slider-drinks').style.display = "none";
+        document.querySelector('.slider-deserts').style.display = "none";
+    }
+    function openDishes() {
+        document.querySelector('.slider-starters').style.display = "none";
+        document.querySelector('.slider-drinks').style.display = "none";
+        document.querySelector('.slider-deserts').style.display = "none";
+        document.querySelector('.slider-main').style.display = "flex";
+    }
+
+    function openDeserts() {
+        document.querySelector('.slider-starters').style.display = "none";
+        document.querySelector('.slider-main').style.display = "none";
+        document.querySelector('.slider-drinks').style.display = "none";
+        document.querySelector('.slider-deserts').style.display = "flex";
+    }
+
+    function openDrinks() {
+        document.querySelector('.slider-starters').style.display = "none";
+        document.querySelector('.slider-main').style.display = "none";
+        document.querySelector('.slider-deserts').style.display = "none";
+        document.querySelector('.slider-drinks').style.display = "flex";
     }
 })
