@@ -10,6 +10,9 @@ window.addEventListener('load', function () {
 
     let careersBtn = document.querySelector('.careers-btn');
 
+    let burgerBtn = document.querySelector('#burger-menu');
+    let timesClicked = 0;
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     menu.addEventListener('click', openMenu);
@@ -20,6 +23,8 @@ window.addEventListener('load', function () {
     contact.addEventListener('click', openContact);
 
     careersBtn.addEventListener('click', careersFunc);
+
+    burgerBtn.addEventListener('click', burgerFunc);
 
     function openHome() {
         window.location.href = '../../main-page/index.html';
@@ -55,5 +60,15 @@ window.addEventListener('load', function () {
 
     function careersFunc() {
         window.location.href = '../contact-us/index.html';
+    }
+
+    function burgerFunc() {
+        timesClicked++;
+        burgerBtn.style.marginLeft = "55px"
+        if (timesClicked % 2 === 0) {
+            document.querySelector('.navbar ul').style.display = "none";
+        } else {
+            document.querySelector('.navbar ul').style.display = "block";
+        }
     }
 })

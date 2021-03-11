@@ -39,6 +39,10 @@ body{
     padding: 2px;
 }
 
+#burger-menu{
+    display: none;
+}
+
 /* Team */
 main img{
     width: 310px;

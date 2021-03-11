@@ -14,6 +14,9 @@ window.addEventListener('load', function () {
     let deserts = document.querySelector('#deserts');
     let drinks = document.querySelector('#drinks');
 
+    let burgerBtn = document.querySelector('#burger-menu');
+    let timesClicked = 0;
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     menu.addEventListener('click', openMenu);
@@ -27,6 +30,8 @@ window.addEventListener('load', function () {
     mainDishes.addEventListener('click', openDishes);
     deserts.addEventListener('click', openDeserts);
     drinks.addEventListener('click', openDrinks);
+
+    burgerBtn.addEventListener('click', burgerFunc);
 
     function openHome() {
         window.location.href = '../../main-page/index.html';
@@ -86,5 +91,15 @@ window.addEventListener('load', function () {
         document.querySelector('.slider-main').style.display = "none";
         document.querySelector('.slider-deserts').style.display = "none";
         document.querySelector('.slider-drinks').style.display = "flex";
+    }
+
+    function burgerFunc() {
+        timesClicked++;
+        burgerBtn.style.marginLeft = "55px"
+        if (timesClicked % 2 === 0) {
+            document.querySelector('.navbar ul').style.display = "none";
+        } else {
+            document.querySelector('.navbar ul').style.display = "block";
+        }
     }
 })
