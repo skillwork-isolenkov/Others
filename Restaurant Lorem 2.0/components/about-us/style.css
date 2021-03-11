@@ -39,6 +39,10 @@ body{
     padding: 2px;
 }
 
+#burger-menu{
+    display: none;
+}
+
 /* Main */
 main{
     display: flex;
