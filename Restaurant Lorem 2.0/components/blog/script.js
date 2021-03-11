@@ -10,6 +10,9 @@ window.addEventListener('load', function () {
 
     let blogBtn = document.querySelector('.btn');
 
+    let burgerBtn = document.querySelector('#burger-menu');
+    let timesClicked = 0;
+
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
     menu.addEventListener('click', openMenu);
@@ -20,6 +23,8 @@ window.addEventListener('load', function () {
     contact.addEventListener('click', openContact);
 
     blogBtn.addEventListener('click', blogFunc);
+
+    burgerBtn.addEventListener('click', burgerFunc);
 
 
     function openHome() {
@@ -56,5 +61,15 @@ window.addEventListener('load', function () {
 
     function blogFunc() {
         window.location.href = '../../main-page/index.html';
+    }
+
+    function burgerFunc() {
+        timesClicked++;
+        burgerBtn.style.marginLeft = "55px"
+        if (timesClicked % 2 === 0) {
+            document.querySelector('.navbar ul').style.display = "none";
+        } else {
+            document.querySelector('.navbar ul').style.display = "block";
+        }
     }
 })

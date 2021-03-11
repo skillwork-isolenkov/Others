@@ -38,6 +38,10 @@ body{
     padding: 2px;
 }
 
+#burger-menu{
+    display: none;
+}
+
 /* Main */
 main h2{
     font-family: 'Akaya Telivigala', cursive;

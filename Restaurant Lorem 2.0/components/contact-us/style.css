@@ -36,6 +36,10 @@
     padding: 2px;
 }
 
+#burger-menu{
+    display: none;
+}
+
 /* Main */
 main{
     background-image: url(../../img/contact/newsletter-bg.png);
