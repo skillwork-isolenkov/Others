@@ -44,6 +44,10 @@ body{
     padding: 2px;
 }
 
+#burger-menu{
+    display: none;
+}
+
 /* Main */
 main{
     color: white;

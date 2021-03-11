@@ -9,6 +9,9 @@ window.addEventListener('load', function () {
     let contact = document.querySelector('.contact-link');
 
     let bookBtn = document.querySelector('.btn');
+    let burgerBtn = document.querySelector('#burger-menu');
+
+    let timesClicked = 0;
 
     home.addEventListener('click', openHome);
     about.addEventListener('click', openAbout);
@@ -20,6 +23,7 @@ window.addEventListener('load', function () {
     contact.addEventListener('click', openContact);
 
     bookBtn.addEventListener('click', btnFunc);
+    burgerBtn.addEventListener('click', burgerFunc);
 
     function openHome() {
         window.location.href = './index.html';
@@ -57,6 +61,13 @@ window.addEventListener('load', function () {
     function btnFunc() {
         window.location.href = '../components/reservation/index.html';
     }
-
-
+    function burgerFunc() {
+        timesClicked++;
+        burgerBtn.style.marginLeft = "55px"
+        if (timesClicked % 2 === 0) {
+            document.querySelector('.navbar ul').style.display = "none";
+        } else {
+            document.querySelector('.navbar ul').style.display = "block";
+        }
+    }
 })
