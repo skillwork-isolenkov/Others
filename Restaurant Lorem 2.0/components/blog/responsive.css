@@ -38,6 +38,9 @@
         background-image: none;
         background-color: black;
     }
+    main h2{
+        font-size: 35px;
+    }
     main img{
         height: 120px;
         width: 153px;

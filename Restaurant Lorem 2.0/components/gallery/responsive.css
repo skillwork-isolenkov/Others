@@ -34,6 +34,9 @@
     }
 
     /* Main */
+    main h2{
+        font-size: 35px;
+    }
     .head-elements h2{
         font-size: 35px;
     }
