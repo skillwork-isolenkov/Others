@@ -34,5 +34,35 @@
     }
 
     /* Main */
-   
+    main{
+        background-image: none;
+        background-color: black;
+    }
+    main img{
+        height: 120px;
+        width: 153px;
+    }
+
+    .first-line, .second-line{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 20px;
+    }
+
+    .latest-recipes, .new-recruits, .baking-tips, .eggs{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .first-blog, .second-blog, .third-blog, .fourth-blog {
+        width: 150px;
+        padding: 40px 1% 0px;
+    }
+    .first-blog h4, .second-blog h4, .third-blog h4, .fourth-blog h4{
+        font-size: 12px;
+    }
+    .first-blog p, .second-blog p, .third-blog p, .fourth-blog p{
+        font-size: 17px;
+    }
   }
