@@ -8,6 +8,10 @@ window.addEventListener('load', function () {
     let reservation = document.querySelector('.reservation-link');
     let contact = document.querySelector('.contact-link');
 
+    let button = document.querySelector('.orange-btn');
+    let input = document.querySelector('.input-email');
+    let message = document.querySelector('.message');
+
     let burgerBtn = document.querySelector('#burger-menu');
     let timesClicked = 0;
 
@@ -20,6 +24,8 @@ window.addEventListener('load', function () {
     reservation.addEventListener('click', openReservation);
     contact.addEventListener('click', openContact);
 
+
+    button.addEventListener('click', contactFunc);
     burgerBtn.addEventListener('click', burgerFunc);
 
     function openHome() {
@@ -52,6 +58,15 @@ window.addEventListener('load', function () {
 
     function openContact() {
         window.location.href = './index.html';
+    }
+
+    function contactFunc(e) {
+        e.preventDefault();
+        if (input.value !== '') {
+            message.textContent = 'Your e-mail has been submitted!'
+        }
+        input.value = '';
+
     }
 
     function burgerFunc() {

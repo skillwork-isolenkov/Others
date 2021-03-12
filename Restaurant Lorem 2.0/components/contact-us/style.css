@@ -92,6 +92,13 @@ main{
     color: #ffffff;
 }
 
+.message{
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+}
+
 /* Footer */
 footer{
     background-image: url(../../img/contact/footer_background.jpg);
